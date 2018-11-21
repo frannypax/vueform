@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue.js tutorial</title>
+	
+	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id='main'>
+		<h1>{{heading}}</h1>
+		<p>{{welcome}}</p>
+		<h2>Methods</h2>
+			<a>{{sample()}}</a>
+			<!-- <a>{{increase()}}</a>
+			<a>{{decrease()}}</a> -->
+
+		<h2>Events</h2>
+			<input class="form-control" v-on:input = "inputText">
+			<p>text:{{inputData}}</p>
+
+			<br>
+			<button class="btn btn-default" v-on:click="increase"> Add by 1
+			</button>
+			<button class="btn btn-primary" v-on:click="decrease"> Subtract by 1
+			</button>
+			<p>Clicks: {{number}}</p>
+
+
+	</div>
+	
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
+<script src="vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

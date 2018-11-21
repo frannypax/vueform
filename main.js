@@ -4,7 +4,9 @@ new Vue({
 		welcome: 'Hi There',
 		heading: 'Vue Tutorials',
 		inputData: 'Your text here',
-		number:1
+		number:1,
+		foo: 30,
+		bar: 30
 	},
 	methods:{
 		sample: function(){
